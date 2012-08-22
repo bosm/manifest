@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+  <remote name="origin"
+          fetch="git://github.com/bosm/" />
+
+  <default revision="master"
+           remote="origin" />
+
+  <project path="bos" name="bos" />
+  <project path="distro" name="distro" />
+  <project path="bm" name="bm" />
+
+  <project path="package/bosdev/demo" name="demo" />
+
+</manifest>
