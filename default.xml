@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
+  <remote name="ffmpeg"
+          fetch="git://git.videolan.org/" />
+
+  <remote name="lim"
+          fetch="git://limoa.git.sourceforge.net/gitroot/limoa/" />
+
   <remote name="origin"
           fetch="git://github.com/bosm/" />
 
@@ -8,9 +14,25 @@
            remote="origin" />
 
   <project path="bos" name="bos" />
-  <project path="distro" name="distro" />
+  <project path="distro" name="distro"
+           revision="lim-openmax" />
   <project path="bm" name="bm" />
 
-  <project path="package/bosdev/demo" name="demo" />
+  <project path="package/ffmpeg" name="ffmpeg"
+           revision="refs/tags/n0.8.1"
+           remote="ffmpeg" />
+
+  <project path="package/lim/limoa" name="limoa"
+           remote="lim" />
+  <project path="package/lim/limoi-base" name="limoi-base"
+           remote="lim" />
+  <project path="package/lim/limoi-components" name="limoi-components"
+           remote="lim" />
+  <project path="package/lim/limoi-core" name="limoi-core"
+           remote="lim" />
+  <project path="package/lim/limoi-plugins" name="limoi-plugins"
+           remote="lim" />
+  <project path="package/lim/limutil" name="limutil"
+           remote="lim" />
 
 </manifest>
