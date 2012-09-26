@@ -1,38 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
-  <remote name="ffmpeg"
-          fetch="git://git.videolan.org/" />
-
-  <remote name="lim"
-          fetch="git://limoa.git.sourceforge.net/gitroot/limoa/" />
-
-  <remote name="origin"
-          fetch="git://github.com/bosm/" />
-
-  <default revision="master"
-           remote="origin" />
-
-  <project path="bos" name="bos" />
-  <project path="distro" name="distro"
-           revision="lim-openmax" />
-  <project path="bm" name="bm" />
-
-  <project path="package/ffmpeg" name="ffmpeg"
-           revision="refs/tags/n0.8.1"
-           remote="ffmpeg" />
-
-  <project path="package/lim/limoa" name="limoa"
-           remote="lim" />
-  <project path="package/lim/limoi-base" name="limoi-base"
-           remote="lim" />
-  <project path="package/lim/limoi-components" name="limoi-components"
-           remote="lim" />
-  <project path="package/lim/limoi-core" name="limoi-core"
-           remote="lim" />
-  <project path="package/lim/limoi-plugins" name="limoi-plugins"
-           remote="lim" />
-  <project path="package/lim/limutil" name="limutil"
-           remote="lim" />
-
+  <remote fetch="git://git.videolan.org/" name="ffmpeg"/>
+  <remote fetch="git://limoa.git.sourceforge.net/gitroot/limoa/" name="lim"/>
+  <remote fetch="git://github.com/bosm/" name="origin"/>
+  
+  <default remote="origin" revision="master"/>
+  
+  <project groups="default" name="bm" revision="307965a0b7f1f9714992f81474fbb02803e844d1"/>
+  <project groups="default" name="bos" revision="14c322d8c208131d98f8a15b4e991919a8260afd"/>
+  <project groups="default" name="distro" revision="4461e9441bf10fa6790c73544a97f8228fa90ef8"/>
+  <project groups="default" name="ffmpeg" path="package/ffmpeg" remote="ffmpeg" revision="2ff36ef521a551b99ea69dda0aa82dc9fa49a131"/>
+  <project groups="default" name="limoa" path="package/lim/limoa" remote="lim" revision="7f9215f98e90302e31e8444234e011f285782dba"/>
+  <project groups="default" name="limoi-base" path="package/lim/limoi-base" remote="lim" revision="5043597e13d9addf3a5e452d1532c55c28e99655"/>
+  <project groups="default" name="limoi-components" path="package/lim/limoi-components" remote="lim" revision="dde3547a28c000b729515efd2b025db36064742e"/>
+  <project groups="default" name="limoi-core" path="package/lim/limoi-core" remote="lim" revision="9d20b268e8918170741f5cba7225af5c1ba9b26f"/>
+  <project groups="default" name="limoi-plugins" path="package/lim/limoi-plugins" remote="lim" revision="bf17c7d8d4f50f7a541f2a7d74e3172282b1b543"/>
+  <project groups="default" name="limutil" path="package/lim/limutil" remote="lim" revision="83cb915c6617f64bc175c46c9de9af8bc301579f"/>
 </manifest>
