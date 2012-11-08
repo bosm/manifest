@@ -13,8 +13,8 @@
            sync-j="1" />
 
   <project path="bos" name="bos" remote="bosm" revision="master" />
-  <project path="distro" name="distro" remote="bosm" revision="master" />
   <project path="bm" name="bm" remote="bosm" revision="master" />
+  <project path="distro" name="distro" remote="bosm" revision="ics-x86" />
 
   <!-- from x86 port repositories -->
   <project path="package/android/build" name="platform/build" remote="x86" revision="ics-x86">
